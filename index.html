@@ -40,6 +40,31 @@
         .font-lato {
             font-family: 'Lato', sans-serif;
         }
+
+        .first-slider-image {
+            background-image: linear-gradient(180deg, #121212, rgba(18, 18, 18, 0.00)), url('./images/banner1.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .second-slider-image {
+            background-image: linear-gradient(180deg, #121212, rgba(18, 18, 18, 0.00)), url('./images/banner2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .third-slider-image {
+            background-image: linear-gradient(180deg, #121212, rgba(18, 18, 18, 0.00)), url('./images/banner3.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .fourth-slider-image {
+            background-image: linear-gradient(180deg, #121212, rgba(18, 18, 18, 0.00)), url('./images/banner4.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
     </style>
 </head>
 
@@ -132,7 +157,104 @@
                 </div>
             </div>
         </nav>
-
+        <!-- banner section -->
+        <div class="carousel w-full rounded-lg overflow-hidden">
+            <!-- first slider -->
+            <div id="slide1" class="carousel-item relative w-full h-[75vh]">
+                <!-- <img src="./images/banner4.png" class="w-full" /> -->
+                <div class="w-full  first-slider-image bg-center bg-cover">
+                </div>
+                <div
+                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2  items-center">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <div class="max-w-[75%] mx-auto flex flex-col items-center gap-6">
+                        <h1 class="text-center text-2xl sm:text-7xl font-extrabold text-white">Exotic tastes at your doorstep</h1>
+                        <p class="text-center font-medium text-xl text-white">We supply highly quality organic products
+                        </p>
+                        <button class="btn bg-red text-white font-extrabold text-xl border-transparent">Shop
+                            Now</button>
+                    </div>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- second slider -->
+            <div id="slide2" class="carousel-item relative w-full h-[75vh]">
+                <!-- <img src="./images/banner2.png" class="w-full" /> -->
+                <div class="w-full  second-slider-image bg-center bg-cover">
+                </div>
+                <div
+                    class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <div class="max-w-[75%] mx-auto flex flex-col items-center gap-6">
+                        <h1 class="text-center  text-2xl sm:text-7xl font-extrabold text-white">Exotic tastes at your doorstep</h1>
+                        <p class="text-center font-medium text-xl text-white">We supply highly quality organic products
+                        </p>
+                        <button class="btn bg-red text-white font-extrabold text-xl border-transparent">Shop
+                            Now</button>
+                    </div>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- third slider -->
+            <div id="slide3" class="carousel-item relative w-full h-[75vh]">
+                <!-- <img src="./images/banner3.png" class="w-full" /> -->
+                <div class="w-full  third-slider-image bg-center bg-cover">
+                </div>
+                <div
+                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <div class="max-w-[75%] mx-auto flex flex-col items-center gap-6">
+                        <h1 class="text-center text-2xl sm:text-7xl font-extrabold text-white">Exotic tastes at your doorstep</h1>
+                        <p class="text-center font-medium text-xl text-white">We supply highly quality organic products
+                        </p>
+                        <button class="btn bg-red text-white font-extrabold text-xl border-transparent">Shop
+                            Now</button>
+                    </div>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- fourth slider -->
+            <div id="slide4" class="carousel-item relative w-full h-[75vh]">
+                <img src="./images/banner1.png" class="w-full" />
+                <div class="w-full  fourth-slider-image bg-center bg-cover">
+                </div>
+                <div
+                    class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <div class="max-w-[75%] mx-auto flex flex-col items-center gap-6">
+                        <h1 class="text-center  text-2xl sm:text-7xl font-extrabold text-white">Exotic tastes at your doorstep</h1>
+                        <p class="text-center font-medium text-xl text-white">We supply highly quality organic products
+                        </p>
+                        <button class="btn bg-red text-white font-extrabold text-xl border-transparent">Shop
+                            Now</button>
+                    </div>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <!-- floating card section -->
+        <div class="hidden lg:flex justify-between gap-24 bg-white rounded-lg p-12 max-w-[85%] mx-auto -mt-28 relative shadow-[0_8px_60px_0px_rgba(0,0,0,0.05)]">
+            <div>
+                <img src="./images/fruit1.png" alt="">
+                <p class="text-dark text-center text-xl">Strawberry</p>
+            </div>
+            <div>
+                <img src="./images/fruit2.png" alt="">
+                <p class="text-dark text-center text-xl">Orange</p>
+            </div>
+            <div>
+                <img src="./images/fruit3.png" alt="">
+                <p class="text-dark text-center text-xl">Mango</p>
+            </div>
+            <div>
+                <img src="./images/fruit4.png" alt="">
+                <p class="text-dark text-center text-xl">Strawberry</p>
+            </div>
+            <div>
+                <img src="./images/fruit5.png" alt="">
+                <p class="text-dark text-center text-xl">Mango</p>
+            </div>
+        </div>
     </header>
     <!-- main -->
     <main>
