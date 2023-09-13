@@ -72,6 +72,13 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+
+        .choose-image {
+            background-image: url('./images/whychoose1.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 
@@ -769,14 +776,14 @@
             <p class="font-medium leading-7 text-center max-w-3xl mx-auto pt-6 pb-12">Contrary to popular belief, is not
                 simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over
                 2000 years old.</p>
-            <div class="flex gap-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-10 justify-items-center">
                 <div class="space-y-12">
                     <!-- reason 1 -->
-                    <div class="flex gap-6">
+                    <div class="flex flex-col lg:flex-row text-center lg:text-left justify-center gap-6">
                         <div>
                             <i class="fa-solid fa-users text-2xl bg-gray-100 rounded-full text-dark p-5"></i>
                         </div>
-                        <div>
+                        <div class="flex flex-col items-center lg:items-start">
                             <h5 class="text-2xl font-extrabold text-dark pb-5">Dedicated Team</h5>
                             <hr class="w-24 border-dark pb-4">
                             <p class="text-gray-500 max-w-sm">Professional employees are there for you to pick the most
@@ -784,11 +791,11 @@
                         </div>
                     </div>
                     <!-- reason 2 -->
-                    <div class="flex gap-6">
+                    <div class="flex flex-col lg:flex-row text-center lg:text-left justify-center gap-6">
                         <div>
                             <i class="fa-regular fa-heart  text-2xl bg-gray-100 rounded-full text-dark p-5"></i>
                         </div>
-                        <div>
+                        <div class="flex flex-col items-center lg:items-start">
                             <h5 class="text-2xl font-extrabold text-dark pb-5">Fresh is Best</h5>
                             <hr class="w-24 border-dark pb-4">
                             <p class="text-gray-500 max-w-sm">Professional employees are there for you to pick the most
@@ -796,11 +803,11 @@
                         </div>
                     </div>
                     <!-- reason 3 -->
-                    <div class="flex gap-6">
+                    <div class="flex flex-col lg:flex-row text-center lg:text-left justify-center gap-6">
                         <div>
                             <i class="fa-solid fa-gift text-2xl bg-gray-100 rounded-full text-dark p-5"></i>
                         </div>
-                        <div>
+                        <div class="flex flex-col items-center lg:items-start">
                             <h5 class="text-2xl font-extrabold text-dark pb-5">Gift Certificates</h5>
                             <hr class="w-24 border-dark pb-4">
                             <p class="text-gray-500 max-w-sm">Professional employees are there for you to pick the most
@@ -808,10 +815,47 @@
                         </div>
                     </div>
                 </div>
-                <div class="rounded-lg overflow-hidden">
-                    <img src="./images/whychoose1.png" alt="">
+                <div class="rounded-lg overflow-hidden -order-11 lg:order-2">
+                    <img src="./images/whychoose1.png" alt="" class=" min-h-full object-cover">
                 </div>
-                <div></div>
+                <div class="space-y-12 lg:order-3">
+                    <!-- reason 4 -->
+                    <div class="flex flex-col lg:flex-row text-center lg:text-right justify-center  gap-6">
+                        <div class=" lg:order-1">
+                            <i class="fa-solid fa-carrot text-2xl bg-gray-100 rounded-full text-dark p-5"></i>
+                        </div>
+                        <div class="flex flex-col items-center lg:items-start">
+                            <h5 class="text-2xl font-extrabold text-dark pb-5">Integrated Supplier</h5>
+                            <hr class="w-24 border-dark pb-4 relative lg:ml-auto">
+                            <p class="text-gray-500 max-w-sm">Professional employees are there for you to pick the most
+                                amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                    <!-- reason 5 -->
+                    <div class="flex gap-6 flex-col lg:flex-row text-center lg:text-right justify-center">
+                        <div class=" lg:order-1">
+                            <i class="fa-solid fa-ice-cream text-2xl bg-gray-100 rounded-full text-dark p-5"></i>
+                        </div>
+                        <div class="flex flex-col items-center lg:items-start">
+                            <h5 class="text-2xl font-extrabold text-dark pb-5">Sustainable Practice</h5>
+                            <hr class="w-24 border-dark pb-4 relative lg:ml-auto">
+                            <p class="text-gray-500 max-w-sm">Professional employees are there for you to pick the most
+                                amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                    <!-- reason 6 -->
+                    <div class="flex gap-6 flex-col lg:flex-row text-center lg:text-right justify-center">
+                        <div class=" lg:order-1">
+                            <i class="fa-regular fa-thumbs-up text-2xl bg-gray-100 rounded-full text-dark p-5"></i>
+                        </div>
+                        <div class="flex flex-col items-center lg:items-start">
+                            <h5 class="text-2xl font-extrabold text-dark pb-5">The Benefits Only</h5>
+                            <hr class="w-24 border-dark pb-4 relative lg:ml-auto">
+                            <p class="text-gray-500 max-w-sm">Professional employees are there for you to pick the most
+                                amazing and fresh fruits.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
