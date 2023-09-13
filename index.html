@@ -28,7 +28,8 @@
                     colors: {
                         clifford: '#da373d',
                         red: '#F85559',
-                        dark: '#121212'
+                        dark: '#121212',
+                        light: 'rgba(18, 18, 18, 0.10)'
                     }
                 }
             }
@@ -272,76 +273,205 @@
                 <div class="flex">
                     <div class="flex text-dark">
                         <div>
-                            <h3 class="text-5xl font-extrabold m-2">29 &nbsp;</h3>
-                            <p class="font-medium ml-4">Days</p>
+                            <h3 class="text-2xl lg:text-5xl font-extrabold m-2">29 &nbsp;</h3>
+                            <p class="font-medium md:ml-4">Days</p>
                         </div>
-                        <div class="text-4xl font-semibold">
+                        <div class="text-xl lg:text-4xl font-semibold pt-2 lg:pt-0">
                             :
                         </div>
                     </div>
                     <div class="flex text-dark">
                         <div>
-                            <h3 class="text-5xl font-extrabold m-2">&nbsp; 15 &nbsp;</h3>
-                            <p class="font-medium ml-8">Hours</p>
+                            <h3 class="text-2xl lg:text-5xl font-extrabold m-2">&nbsp; 15 &nbsp;</h3>
+                            <p class="font-medium md:ml-8">Hours</p>
                         </div>
-                        <div class="text-4xl font-semibold">
+                        <div class="text-xl lg:text-4xl font-semibold pt-2 lg:pt-0">
                             :
                         </div>
                     </div>
                     <div class="flex text-dark">
                         <div>
-                            <h3 class="text-5xl font-extrabold m-2">&nbsp; 25 &nbsp;</h3>
-                            <p class="font-medium ml-6">Minutes</p>
+                            <h3 class="text-2xl lg:text-5xl font-extrabold m-2">&nbsp; 25 &nbsp;</h3>
+                            <p class="font-medium md:ml-6">Minutes</p>
                         </div>
-                        <div class="text-4xl font-semibold">
+                        <div class="text-xl lg:text-4xl font-semibold pt-2 lg:pt-0">
                             :
                         </div>
                     </div>
                     <div class="flex text-dark">
                         <div>
-                            <h3 class="text-5xl font-extrabold m-2">&nbsp; 08</h3>
-                            <p class="font-medium ml-6">Seconds</p>
+                            <h3 class="text-2xl lg:text-5xl font-extrabold m-2">&nbsp; 08</h3>
+                            <p class="font-medium md:ml-6">Seconds</p>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- cards -->
-            <div class="my-12">
+            <div class="my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- card 1 -->
-                <div>
-                    <img src="" alt="">
-                    <h4>12.90$ - 18.85$</h4>
-                    <hr>
-                    <p>Apples</p>
-                    <div class="rating rating-lg rating-half">
-                        <input type="radio" name="rating-10" class="rating-hidden" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1"
-                            checked />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-1" />
-                        <input type="radio" name="rating-10" class="bg-green-500 mask mask-star-2 mask-half-2" />
+                <div class="text-center mx-auto space-y-4 border border-light rounded-lg p-12">
+                    <img class="inline-block mb-7" src="./images/fruit6.png" alt="">
+                    <h4 class="text-dark text-2xl font-bold">12.90$ - 18.85$</h4>
+                    <div class="border-b h-1 max-w-[224px] bg-blue-700 border-b-light inline-block"></div>
+                    <hr class="border w-[100%] border-light inline-block">
+                    <p class="text-dark font-medium">Apples</p>
+                    <div>
+                        <i class="fa-solid fa-star text-red"></i>
+                        <i class="fa-solid fa-star text-red"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
                     </div>
                     <!-- Open the modal using ID.showModal() method -->
-                    <button class="" onclick="my_modal_1.showModal()">Details</button>
+                    <button class="text-red" onclick="my_modal_1.showModal()">Details</button>
                     <dialog id="my_modal_1" class="modal">
                         <div class="modal-box">
-                            <h3 class="font-bold text-lg">Hello!</h3>
-                            <p class="py-4">Press ESC key or click the button below to close</p>
+                            <img class="inline-block mx-auto w-56" src="./images/fruit8.png" alt="">
+                            <h3 class="text-4xl font-extrabold">Red Dragon</h3>
+                            <p class=" pt-6">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.</p>
+                            <div class="pb-8 pt-6">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                            </div>
+                            <form method="dialog" class="flex gap-16 justify-center items-center">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn btn-outline text-red text-xl">Close</button>
+                                <button class="btn bg-red text-white border-transparent text-xl font-extrabold">Buy
+                                    Now</button>
+                            </form>
                             <div class="modal-action">
-                                <form method="dialog">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close</button>
-                                </form>
                             </div>
                         </div>
                     </dialog>
                 </div>
+                <!-- card 2 -->
+                <div class="text-center mx-auto space-y-4 border border-light rounded-lg p-12">
+                    <img class="inline-block mb-7" src="./images/fruit7.png" alt="">
+                    <h4 class="text-dark text-2xl font-bold">12.90$ - 18.85$</h4>
+                    <div class="border-b h-1 max-w-[224px] bg-blue-700 border-b-light inline-block"></div>
+                    <hr class="border w-[100%] border-light inline-block">
+                    <p class="text-dark font-medium">Orange</p>
+                    <div>
+                        <i class="fa-solid fa-star text-red"></i>
+                        <i class="fa-solid fa-star text-red"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                    </div>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="text-red" onclick="my_modal_2.showModal()">Details</button>
+                    <dialog id="my_modal_2" class="modal">
+                        <div class="modal-box">
+                            <img class="inline-block mx-auto w-56" src="./images/fruit7.png" alt="">
+                            <h3 class="text-4xl font-extrabold">Orange</h3>
+                            <p class=" pt-6">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.</p>
+                            <div class="pb-8 pt-6">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                            </div>
+                            <form method="dialog" class="flex gap-16 justify-center items-center">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn btn-outline text-red text-xl">Close</button>
+                                <button class="btn bg-red text-white border-transparent text-xl font-extrabold">Buy
+                                    Now</button>
+                            </form>
+                            <div class="modal-action">
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+                <!-- card 3 -->
+                <div class="text-center mx-auto space-y-4 border border-light rounded-lg p-12">
+                    <img class="inline-block mb-7" src="./images/fruit8.png" alt="">
+                    <h4 class="text-dark text-2xl font-bold">12.90$ - 18.85$</h4>
+                    <div class="border-b h-1 max-w-[224px] bg-blue-700 border-b-light inline-block"></div>
+                    <hr class="border w-[100%] border-light inline-block">
+                    <p class="text-dark font-medium">Red Dragon</p>
+                    <div>
+                        <i class="fa-solid fa-star text-red"></i>
+                        <i class="fa-solid fa-star text-red"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                    </div>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="text-red" onclick="my_modal_3.showModal()">Details</button>
+                    <dialog id="my_modal_3" class="modal">
+                        <div class="modal-box">
+                            <img class="inline-block mx-auto w-56" src="./images/fruit9.png" alt="">
+                            <h3 class="text-4xl font-extrabold">Banana</h3>
+                            <p class=" pt-6">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.</p>
+                            <div class="pb-8 pt-6">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                            </div>
+                            <form method="dialog" class="flex gap-16 justify-center items-center">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn btn-outline text-red text-xl">Close</button>
+                                <button class="btn bg-red text-white border-transparent text-xl font-extrabold">Buy
+                                    Now</button>
+                            </form>
+                            <div class="modal-action">
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+                <!-- card 4 -->
+                <div class="text-center mx-auto space-y-4 border border-light rounded-lg p-12">
+                    <img class="inline-block mb-7" src="./images/fruit9.png" alt="">
+                    <h4 class="text-dark text-2xl font-bold">12.90$ - 18.85$</h4>
+                    <div class="border-b h-1 max-w-[224px] bg-blue-700 border-b-light inline-block"></div>
+                    <hr class="border w-[100%] border-light inline-block">
+                    <p class="text-dark font-medium">Banana</p>
+                    <div>
+                        <i class="fa-solid fa-star text-red"></i>
+                        <i class="fa-solid fa-star text-red"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                        <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                    </div>
+                    <!-- Open the modal using ID.showModal() method -->
+                    <button class="text-red" onclick="my_modal_4.showModal()">Details</button>
+                    <dialog id="my_modal_4" class="modal">
+                        <div class="modal-box">
+                            <img class="inline-block mx-auto w-56" src="./images/fruit6.png" alt="">
+                            <h3 class="text-4xl font-extrabold">Apples</h3>
+                            <p class=" pt-6">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.</p>
+                            <div class="pb-8 pt-6">
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-red"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                                <i class="fa-solid fa-star text-[#FBC0A8]"></i>
+                            </div>
+                            <form method="dialog" class="flex gap-16 justify-center items-center">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn btn-outline text-red text-xl">Close</button>
+                                <button class="btn bg-red text-white border-transparent text-xl font-extrabold">Buy
+                                    Now</button>
+                            </form>
+                            <div class="modal-action">
+                            </div>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+            <!-- button -->
+            <div class="flex justify-center">
+                <button class="btn bg-red text-white font-extrabold text-xl border-transparent">Shop All</button>
             </div>
         </section>
     </main>
